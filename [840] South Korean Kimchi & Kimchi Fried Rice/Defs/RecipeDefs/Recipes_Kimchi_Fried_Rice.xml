@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>cook_Kimchi_Fried_Rice</defName>
+		<label>Make Kimchi Fried Rice</label>
+		<description>Add sour kimchi and meat to rice and stir-fry to make kimchi fried rice. Add one egg and you're done.</description>
+		<jobString>Making Kimchi Fried Rice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+					<count>0.15</count>
+			</li>
+			<li>
+			        <filter>
+					<categories>
+        					<li>MeatRaw</li>
+        				</categories>
+        			</filter>
+        				<count>0.15</count>
+      			</li>
+			<li>
+			        <filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+        				</categories>
+        			</filter>
+        				<count>0.15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SourKimchi</li>
+					</thingDefs>
+				</filter>
+					<count>0.05</count>
+			</li>
+    </ingredients>
+		<products>
+			<Kimchi_Fried_Rice>1</Kimchi_Fried_Rice>
+		</products>
+	</RecipeDef>
+
+
+</Defs>

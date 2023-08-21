@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=========================== Food crops ==============================-->
+
+  <ThingDef Name="NapaCabbagePlant" ParentName="PlantBase">
+    <defName>Plant_NapaCabbage</defName>
+    <label>Napa Cabbage</label>
+    <description>Korean cabbage, born through breeding by Dr. Woo Jang-chun.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Crops/NapaCabbagePlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawNapaCabbage</harvestedThingDef>
+      <harvestYield>11</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.8</growDays>
+      <visualSizeRange>0.3~0.80</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_Pepper</defName>
+    <label>Gochu Pepper</label>
+    <description>A plant of the Solanaceae family with a sharp, spicy taste. If you dry and grind ripe red peppers, you can make Korea's representative spice, 'gochu powder'.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Crops/PepperPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawPepper</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.35</topWindExposure>
+      <growDays>11.3</growDays>
+      <immatureGraphicPath>Things/Plant/Crops/PepperPlantImmature</immatureGraphicPath>
+      <visualSizeRange>0.3~1.4</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+
+</Defs>

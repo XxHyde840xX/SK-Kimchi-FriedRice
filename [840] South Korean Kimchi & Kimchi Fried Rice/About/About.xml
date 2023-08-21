@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>South Korea's Kimchi and Kimchi Fried Rice</name>
+  <author>Kimchibok/XxHyde840xX</author>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <packageId>840.Kimchibok.kimchi</packageId>
+  <description>Adding South Korea's representative traditional dish, Kimchi, and Kimchi Fried Rice, which can be made with Kimchi. Napacabbage and pepper are added. To make Kimchi, research on 'Pemmican' is necessary. Translation by XxHyde840xX.</description>
+</ModMetaData>

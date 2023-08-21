@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="MealFineBase">
+	<defName>Kimchi_Fried_Rice</defName>
+	<label>Kimchi Fried Rice</label>
+	<description>Kimchi fried rice is considered one of the most traditional and delicious foods in Korea.</description>
+	<graphicData>
+		<texPath>Meal/Kimchi Fried Rice</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<ingestible>
+		<specialThoughtDirect>WF_AteKimchi_Fried_Rice</specialThoughtDirect>
+	</ingestible>
+</ThingDef>
+
+
+</Defs>

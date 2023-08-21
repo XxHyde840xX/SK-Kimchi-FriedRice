@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_Kimchi</defName>
+    <label>Make Kimchi</label>
+    <description>Mix cabbage and red pepper properly to make cabbage kimchi. In fact, it requires a process that is dozens of times more difficult than this.</description>
+    <jobString>Making Cabbage Kimchi.</jobString>
+    <workAmount>700</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawNapaCabbage</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPepper</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kimchi>4</Kimchi>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawNapaCabbage</li>
+        <li>RawPepper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+    <displayPriority>1440</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_SourKimchi</defName>
+    <label>Make Sour Kimchi</label>
+    <description>Cabbage kimchi is fermented at room temperature to make sour kimchi.</description>
+    <jobString>Making Sour Kimchi.</jobString>
+    <workAmount>700</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Kimchi</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <SourKimchi>10</SourKimchi>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Kimchi</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+    <displayPriority>1440</displayPriority>
+  </RecipeDef>
+
+</Defs>

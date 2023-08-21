@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<ThoughtDef>
+  <defName>WF_AteKimchi_Fried_Rice</defName>
+  <durationDays>0.2</durationDays>
+  <stages>
+    <li>
+  <label>Ate kimchi fried rice</label>
+  <description>I ate some delicious kimchi fried rice.</description>
+      <baseMoodEffect>5</baseMoodEffect>
+    </li>
+  </stages>
+</ThoughtDef>
+
+
+</Defs>
